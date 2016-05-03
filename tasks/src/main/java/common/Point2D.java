@@ -29,4 +29,10 @@ public class Point2D {
     public void setY(double y) {
         this.y = y;
     }
+
+    @Override
+    public String toString() {
+        //TODO slow
+        return "("+this.getX() + "/" + this.getY()+")";
+    }
 }
