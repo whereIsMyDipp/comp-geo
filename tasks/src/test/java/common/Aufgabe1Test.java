@@ -16,12 +16,20 @@ public class Aufgabe1Test {
      */
     private static final Logger LOGGER = LoggerFactory.getLogger(Aufgabe1Test.class);
 
+    /**
+     * Check with 5 dummy lines
+     * @throws Exception
+     */
     @Test
     public void naive5() throws Exception{
         LOGGER.debug("Naive test started");
         this.ccwCheck(Util.readLinesFromFile("s_5_1.dat"));
     }
 
+    /**
+     * Comaprison method as described in out task
+     * @param list
+     */
     private void ccwCheck(List<Line2D> list) {
         LOGGER.debug("List size: {}", list.size());
         int crossed = 0;
